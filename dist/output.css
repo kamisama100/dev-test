@@ -4145,10 +4145,6 @@ textarea.form-control.is-invalid{
   width: 10rem;
 }
 
-.w-\[50px\]{
-  width: 50px;
-}
-
 .max-w-full{
   max-width: 100%;
 }
@@ -4765,8 +4761,8 @@ textarea.form-control.is-invalid{
     width: 100%;
   }
 
-  .xs\:w-\[50px\]{
-    width: 50px;
+  .xs\:w-\[40px\]{
+    width: 40px;
   }
 
   .xs\:grid-cols-2{
@@ -4908,14 +4904,14 @@ textarea.form-control.is-invalid{
     width: 80%;
   }
 
-  .sm\:w-\[250px\]{
-    width: 250px;
-  }
-
   .sm\:w-fit{
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .sm\:w-\[250px\]{
+    width: 250px;
   }
 
   .sm\:grid-rows-2{
