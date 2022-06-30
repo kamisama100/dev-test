@@ -4822,6 +4822,10 @@ textarea.form-control.is-invalid{
     row-gap: 2rem;
   }
 
+  .xs\:gap-y-\[1rem\]{
+    row-gap: 1rem;
+  }
+
   .xs\:space-x-\[0rem\] > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(0rem * var(--tw-space-x-reverse));
@@ -4920,6 +4924,10 @@ textarea.form-control.is-invalid{
 
   .sm\:justify-center{
     justify-content: center;
+  }
+
+  .sm\:gap-y-0{
+    row-gap: 0px;
   }
 
   .sm\:text-\[28px\]{
