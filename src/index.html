@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e14774f75.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+  </head>
+  <body class="font-Raleway" style = "width:100%;min-width:100%;max-width:100%;" >
+    <nav class="fixed bg-[#494949] text-white h-[90px] w-full z-50 overflow-hidden">
+      <div class="grid grid-cols-2 place-items-center h-full ">
+        <div id="title" class="col-span-1">
+          <h2 class="font-Lobster text-[40px] tracking-wide">
+            <span class="">Mairala</span>
+          </h2>
+        </div>
+        <div class="hidden lg:flex flex-row gap-x-5 col-span-1 mr-auto text-[16px]">
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            HOME
+          </button>
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            ABOUT
+          </button>
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            PORTFOLIOS
+          </button>
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            TEAM
+          </button>
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            BLOG
+          </button>
+          <button class="hover:underline underline-offset-8 decoration-[#967958] decoration-4">
+            CONTACT
+          </button>
+        </div>
+        <div class="flex lg:hidden relative xs:left-[3rem] sm:left-[7rem] md:left-[8rem]">
+          <button onclick="openThis()" class="w-fit h-fit" type ="button">
+            <i class="fa-solid fa-bars text-[30px]"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id = "burger" class="hidden">
+      <div class="w-[150px] rounded-tl rounded-bl h-full shadow-md bg-[#494949] fixed z-50 -right-0 text-white ">
+        <ul class="relative pt-7 space-y-[2rem]">
+          <li class="">
+            <div class="flex flex-wrap">
+              <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                <span class="text-[18px]">
+                  CLOSE
+                </span>
+              </button>
+            </div>
+          </li>
+          <div class="space-y-[0.5rem]">
+            <li class="">
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    HOME
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    ABOUT
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    PORTFOLIOS
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    TEAM
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    BLOG
+                  </span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="flex">
+                <button class="inline-flex justify-center items-center text-left space-x-2 h-[50px] w-full rounded hover:bg-[#967958]" onclick="closeThis()">
+                  <span class="text-[18px]">
+                    CONTACT
+                  </span>
+                </button>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="container max-w-full w-full min-w overflow-hidden ">
+      <section id="first">
+        <div class="relative xs:h-[630px] md:h-[670px] bg-black text-white flex-wrap">
+            <div class="relative flex flex-col mx-auto">
+              <span class="absolute xs:w-[70%] sm:w-[80%] md:w-[70%] lg:w-fit xs:left-[3rem] sm:left-[6rem] md:left-[10rem] lg:left-[16rem] xs:top-[9rem] md:top-[11rem] lg:top-[16rem] text-left">  
+                <h4 class="xs:text-[21px] sm:text-[28px] md:text-[32px]">GRAB YOUR COPY OF</h4>
+                <h1 class="xs:text-[37px] sm:text-[48px] md:text-[52px]">
+                  THE <span class="text-[#74624d]">PREMIUM</span> QUALITY<br/> 
+                  PSD TEMPLATE FOR <span class="text-[#74624d]">FREE</span>
+                </h1>
+                <button class="relative bg-[#5e4e3dc2] rounded inline-flex items-center top-6 h-[45px] px-[3.0rem]">
+                  <span class="leading-relaxed tracking-wider text-[14px] font-extrabold">
+                    DOWNLOAD
+                    <i class="fa-solid fa-download text-[16px] relative left-[0.5rem]"></i>
+                  </span> 
+                </button>
+              </span>
+            </div>
+        </div>
+      </section>
+      <section id="service">
+        <div class="relative xs:h-[900px] sm:h-[900px] md:h-[500px] mt-[5rem] xs:mb-[6rem] sm:mb-[7rem] md:mb-0">
+          <div class="">
+            <span class="text-center">
+              <h3 class="mb-[1rem] text-[#74624d] text-[24px] font-semibold tracking-wide ">SERVICES WE PROVIDE</h3>
+              <p class="w-[60%] mx-auto tracking-wider leading-relaxed text-[17px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </span>
+          </div>
+          <div class="flex xs:flex-col md:flex-row xs:items-center md:justify-center xs:mt-[3rem] md:mt-[5rem] xs:space-x-[0rem] md:space-x-5 xs:space-y-[4rem] md:space-y-0 ">
+            <div class="flex flex-col w-[25%] items-center text-center space-y-5">
+              <i class="fa-solid fa-users text-[2rem] text-[#74624d]"></i>
+              <h3 class="text-[18px] font-semibold opacity-70">CONSULTANCY</h3>
+              <p class="opacity-60 text-[16px] xs:w-[300px] md:w-fit ">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+              </p>
+            </div>
+            <div class="flex flex-col w-[25%] items-center text-center space-y-5">
+              <i class="fa-solid fa-bullhorn text-[2rem] text-[#74624d] "></i>
+              <h3 class="text-[18px] font-semibold opacity-70">MARKETING</h3>
+              <p class="opacity-60 text-[16px] xs:w-[300px] md:w-fit">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+              </p>
+            </div>
+            <div class="flex flex-col w-[25%] items-center text-center space-y-5">
+              <i class="fa-solid fa-flask text-[2rem]  text-[#74624d] "></i>
+              <h3 class = "text-[18px] font-semibold opacity-70">RESEARCH</h3>
+              <p class="opacity-60 text-[16px] xs:w-[300px] md:w-fit">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <section id="blog">
+        <div class="xs:h-[1550px] sm:h-[1350px] md:h-[1250px] xs:mt-[13rem] sm:mt-0 xs:mb-[20rem] md:mb-[5rem] ">
+          <div class="flex flex-row justify-center">
+            <span class="w-[250px] text-center space-y-[7rem]">
+              <h5 class="text-[#74624d] text-[35px] underline underline-offset-[65px] decoration-[6px] decoration-[#74624d font-semibold tracking-wider ">OUR BLOG</h5>
+              <p class = "mx-auto">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum debitis aut rerum
+              </p>
+            </span>
+          </div>
+          <div class="relative top-[6rem] xs:space-y-[5rem] md:space-y-[3.5rem]">
+            <div class=" grid xs:grid-rows-2 md:grid-cols-2 xs:gap-y-[5rem] md:gap-y-0 xs:gap-x-0 md:gap-x-[3rem] xs:h-[350px] md:h-[250px] xs:w-[90%] md:w-[90%] lg:w-[70%] mx-auto xs:place-items-center md:place-items-start">
+              <div id="carouselExampleControls" class="carousel slide relative xs:ml-0 md:ml-auto xs:h-[210px] md:h-[230px] lg:h-[250px]" data-bs-ride="carousel">
+                <div class="carousel-inner relative overflow-hidden">
+                  <div class="carousel-item active relative float-left">
+                    <img
+                      src="../img/cam.jpg"
+                      class="block ml-auto mx-auto xs:h-[210px] md:h-[230px] lg:h-[250px] xs:w-[350px] md:w-[400px] opacity-90"
+                      alt="Wild Landscape"
+                    />
+                  </div>
+                  <div class="carousel-item relative float-left">
+                    <img
+                      src="../img/cam2.jpg"
+                      class="block ml-auto mx-auto xs:h-[210px] md:h-[230px] lg:h-[250px] xs:w-[350px] md:w-[400px] opacity-90"
+                      alt="Wild Landscape"
+                    />
+                  </div>
+                  <div class="carousel-item relative float-left">
+                    <img
+                      src="../img/cam3.jpg"
+                      class="block ml-auto mx-auto xs:h-[210px] md:h-[230px] lg:h-[250px] xs:w-[350px] md:w-[400px] opacity-90"
+                      alt="Wild Landscape"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center bg-transparent  border-0 hover:outline-none hover:no-underline focus:bg-transparent focus:outline-none focus:no-underline left-0"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center bg-transparent border-0 hover:outline-none hover:no-underline focus:bg-transparent focus:outline-none focus:no-underline right-0"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <span class ="relative xs:row-start-2 md:row-auto xs:space-y-3 md:space-y-0 text-[15px] xs:text-center md:text-left xs:w-[90%] md:w-full">
+                <h5 class="opacity-60">10 April 2014</h5>
+                <h3 class="text-[18px] font-semibold">Typi non habent claritatem insitam</h3>
+                <p class="opacity-50 tracking-wider">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et [...]</p>
+              </span>
+            </div>
+            <div class="grid xs:grid-rows-2 md:grid-cols-2 xs:gap-y-[8rem] md:gap-y-0 xs:gap-x-0 md:gap-x-[3rem] xs:h-[350px] md:h-[250px] w-[90%] lg:w-[70%] mx-auto xs:justify-items-center md:justify-items-start">
+              <span class = "xs:row-start-2 md:row-auto space-y-3 text-[15px] xs:text-center md:text-right mx-auto xs:w-[90%] md:w-full">
+                <h5 class="opacity-60">10 January 2014</h5>
+                <h3 class="text-[18px] font-semibold">Typi non habent claritatem insitam</h3>
+                <p class="opacity-50 tracking-wider">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et [...]</p>
+              </span>
+              <img
+                src="../img/cam4.jpg"
+                class="xs:row-start-1 md:row-auto block xs:h-[210px] md:h-[230px] lg:h-[250px] xs:w-[350px] md:w-[400px] opacity-90"
+                alt="Wild Landscape"
+              />
+            </div>
+            <div class="grid xs:grid-rows-2 md:grid-cols-2 xs:gap-y-[8rem] md:gap-y-0 xs:gap-x-0 md:gap-x-[3rem] xs:h-[350px] md:h-[250px] w-[90%] lg:w-[70%] mx-auto xs:justify-items-center md:justify-items-end ">
+              <img
+                src="../img/cam5.jpg"
+                class="block xs:h-[210px] md:h-[230px] lg:h-[250px] xs:w-[350px] md:w-[400px] opacity-90"
+                alt="Wild Landscape"
+              />
+              <span class = "space-y-3 text-[15px] xs:text-center md:text-left mx-auto xs:w-[90%] md:w-full">
+                <h5 class="opacity-60">10 January 2014</h5>
+                <h3 class="text-[18px] font-semibold">Typi non habent claritatem insitam</h3>
+                <p class="opacity-50 tracking-wider ">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et [...]</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="h-[700px] bg-[#f1ededa1] pt-[5rem]">  
+          <div class="flex flex-col mx-auto xs:w-[90%] md:w-[800px] lg:w-[900px] items-center space-y-[4.5rem]">
+            <span class="">
+              <h1 class="text-[#74624d] text-[35px] tracking-wide font-semibold ">CONTACT</h1>
+            </span>
+            <div class="flex flex-col xs:w-[90%] md:w-[80%] xs:space-y-[3.5rem] md:space-y-[2.5rem]">
+              <div class="grid sm:grid-rows-2 md:grid-cols-2 gap-y-[2rem] gap-x-[1.5rem]">
+                <input placeholder="Name*" type="text" class="text-black text-[16px] indent-4 tracking-wide w-full pt-4 h-[50px] border-opacity-80 border-0 border-t-4 border-black bg-transparent placeholder-[#5f5f5f] outline-none" />
+                <input placeholder="Email*" type="email" class="indent-4 tracking-wide pt-4 w-full h-[50px] border-opacity-80 border-0 border-t-4 border-black bg-transparent placeholder-[#5f5f5f] outline-none" />
+              </div>
+              <div class="flex flex-col space-y-8">
+                <textarea placeholder="Message..." class="indent-4 tracking-wide pt-4 w-full h-[175px] border-opacity-80 border-0 border-t-4 border-b-[1px] border-black bg-transparent placeholder-[#5f5f5f] resize-none outline-none"></textarea>
+                <button class="border-2 border-black w-[10rem] h-[40px] mx-auto shadow-slate-400 shadow-sm relative top-2">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="bg-[#252525] w-full xs:h-[1230px] sm:h-[900px] md:h-[680px] lg:h-[530px] text-white">
+          <div class="relative grid xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[90%] mx-auto xs:top-[110px] sm:top-[50px] gap-y-5 ">
+            <div class="xs:col-span-2 md:col-span-3 lg:col-span-1 xs:text-center lg:text-left">
+              <p class="inline-block font-Lobster text-[#967958] text-[40px] xs:mb-[0.5rem] lg:mb-[1rem]">
+                Mairala
+              </p>
+              <div class="xs:text-center lg:text-left xs:w-full lg:w-[230px] xs:space-y-0 lg:space-y-7 text-[15px] text-[#a19f9f] leading-7">
+                <p>
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. 
+                </p>
+                <p>
+                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus
+                </p>
+              </div>
+            </div>
+            <div class="mb:col-span-1 space-y-6 pt-2">
+              <h3 class="font-bold text-[21px] tracking-wider opacity-70">RECENT POSTS</h3>
+              <div class="space-y-1 border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="text-[14px] h-[25px] opacity-50 ">March 30, 2014</h5>
+                <p  class="text-[14px] opacity-70 pb-8 tracking-wider w-[90%] ">Duis autem vel eum iriure dolor</p>
+              </div>
+              <div class="space-y-1 border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="text-[14px] h-[25px] opacity-50 ">March 30, 2014</h5>
+                <p  class="text-[14px] opacity-70 pb-8 tracking-wider w-[90%] ">Duis autem vel eum iriure dolor</p>
+              </div>
+              <div class="space-y-1 border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="text-[14px] h-[25px] opacity-50 ">March 30, 2014</h5>
+                <p  class="text-[14px] opacity-70 pb-8 tracking-wider w-[90%] ">Duis autem vel eum iriure dolor</p>
+              </div>
+            </div>
+            <div class="mb:col-span-1 space-y-6 pt-2">
+              <h3 class="font-bold text-[21px] tracking-wider opacity-70">TWITTER FEEDS</h3>
+              <div class="flex flex-col gap-y-[1rem] border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="align-bottom text-[14px] h-[30px] xs:w-[90%] sm:w-[250px]"><span class="opacity-50">about 2 days ago </span><span class="text-[#967958] text-[16px]">@kristianplatt</span></h5>
+                <p  class="text-[14px] opacity-70 pb-[2rem] tracking-wider">Good work buddy</p>
+              </div>
+              <div class="flex flex-col gap-y-[1rem] border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="align-bottom text-[14px] h-[30px] xs:w-[90%] sm:w-[250px]"><span class="opacity-50">about 2 days ago </span><span class="text-[#967958] text-[16px]">@kristianplatt</span></h5>
+                <p  class="text-[14px] opacity-70 pb-[2rem] tracking-wider">Good work buddy</p>
+              </div>
+              <div class="flex flex-col gap-y-[1rem] border-0 border-b-[1px] border-[#413d3d] w-[90%] h-[85px]">
+                <h5 class="align-bottom text-[14px] h-[30px] xs:w-[90%] sm:w-[250px]"><span class="opacity-50">about 2 days ago </span><span class="text-[#967958] text-[16px]">@kristianplatt</span></h5>
+                <p  class="text-[14px] opacity-70 pb-[2rem] tracking-wider">Good work buddy</p>
+              </div>
+            </div>
+            <div class="xs:col-span-2 md:col-span-1 pt-2 xs:text-center lg:text-left grid place-content-center xs:gap-y-3.5 md:gap-y-0 lg:gap-y-5 ">
+              <h3 class="font-bold text-[21px] tracking-wider opacity-70">OUR ADDRESS</h3>
+              <div class="flex flex-col space-y-0 text-[15px] text-[#a19f9f] xs:gap-y-[2rem] xs:w-full md:w-[250px]">
+                <div> 
+                  <p class="leading-7">
+                    Invetiore nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Et harum quidem rerum facilis est et expedita distinctio.
+                  </p>
+                </div>
+                <div class="flex xs:flex-row md:flex-col gap-x-6 gap-y-3 xs:justify-center sm:justify-center ">
+                  <span>
+                    <i class="fa-solid fa-location-dot mr-2"></i>
+                    Moonshine St. 14/05 Light, Jupiter
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-phone mr-2"></i>
+                    +00 (123) 456 78 90
+                  </span>
+                  <span>
+                    <i class="fa-solid fa-envelope mr-2"></i>
+                    first.last@email.com
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="copy-right">
+        <div class="flex">
+          <div class="bg-[#161616] h-[50px] w-full text-white grid place-content-center">
+            <p class="font-semibold tracking-wider text-[17px] opacity-30">
+              ©2014 Imran Khan All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script>
+    function openThis(){
+      document.getElementById('burger').classList.add('flex');
+      document.getElementById('burger').classList.remove('hidden');
+    }
+    function closeThis(){
+      document.getElementById('burger').classList.remove('flex');
+      document.getElementById('burger').classList.add('hidden');
+    };
+  </script>
+</html>
+
+
+
